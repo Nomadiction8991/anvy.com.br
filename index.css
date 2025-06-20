@@ -1,0 +1,46 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-weight: normal;
+    color: #222;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.Logomarca{
+    width: 300px;
+    margin-block: 30px;
+    margin-inline: auto;
+}
+section.conteudo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 2 colunas de tamanho igual */
+    width: 70%;
+    margin-inline: auto;
+}
+
+section.conteudo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza o conteúdo */
+    text-decoration: none;
+    padding: 10px;
+    max-width: 150px;
+}
+
+/* Mantém seus estilos existentes para img e label */
+section.conteudo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+section.conteudo label {
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
+}
