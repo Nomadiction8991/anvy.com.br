@@ -1,0 +1,73 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: medium;
+    font-weight: normal;
+    color: #222;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.Logomarca{
+    width: 250px;
+    margin-block: 100px 30px;
+    margin-inline: auto;
+}
+section.conteudo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);  /* 2 colunas de tamanho igual */
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+section.conteudo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centraliza o conteúdo */
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+section.conteudo a:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+/* Mantém seus estilos existentes para img e label */
+section.conteudo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+section.conteudo label {
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    margin-top:100px;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Telas médias: até 800px (tablet, notebook pequeno) */
+@media (max-width: 800px) {
+    section.conteudo {
+        grid-template-columns: repeat(4, 1fr); /* 2 colunas */
+    }
+}
+
+/* Telas pequenas: até 500px (celulares) */
+@media (max-width: 500px) {
+    section.conteudo {
+        grid-template-columns:repeat(3, 1fr); /* 1 coluna empilhada */
+    }
+}
